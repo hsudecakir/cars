@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+  --gray: #9495A5;
+  --black: #000000;
+  --bg: #FAFAFA;
+  --blue: #3A7CFD;
+  --border-color: #e3e4f1;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+  font-family: "Inter", sans-serif;
+  background-color: var(--bg);
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*{
+  box-sizing: border-box;
+}
+
+.container{
+  width: 700px;
+  margin: 0 auto;
+  padding-block: 64px;
+}
+
+.container h1{
+  font-size: 50px;
+  font-weight: 800;
+  margin-bottom: 40px;
+  color: var(--blue);
+}
+
+.cars{
+  border-radius: 10px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+  padding: 20px 52px 20px 32px;
+  border: 1px solid var(--border-color);
+}
+
+.cars img{
+  width: 300px;
+}
+
+.car-brand{
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--black);
+  text-align: right;
+  cursor: pointer;
+}
+
+.car-brand:hover{
+  color: var(--blue);
+}
+
+.car-color{
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--gray);
+  text-align: right;
+}
+
+.car-model{
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--gray);
+  text-align: right;
+}
